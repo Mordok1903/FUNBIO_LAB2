@@ -1,0 +1,10 @@
+numpy
+pandas
+matplotlib
+scipy
+scikit-learn
+joblib
+opencv-python
+mediapipe==0.10.21
+jupyter
+ipykernel

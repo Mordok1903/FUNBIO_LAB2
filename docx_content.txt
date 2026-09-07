@@ -1,0 +1,61 @@
+PONTIFICIA UNIVERSIDAD CATÓLICA DEL PERÚ
+FACULTAD DE CIENCIAS E INGENIERÍA
+FUNDAMENTOS Y APLICACIONES DE BIOMECATRÓNICA
+1MTR58
+INFORME – LABORATORIO 2
+MÓDULO: Procesamiento de Bioseñales en Proyectos Mecatrónicos
+TEMA: Reconocimiento de patrones de señales -
+Seguimiento ocular por visión por computadora y electrooculograma (EOG)
+Integrantes:
+Profesor: David Achanccaray, Ph.D.
+Semestre 2026-2Lima, Perú
+Indicaciones generales
+El trabajo parte del dataframe de características obtenido durante la sesión de laboratorio.
+El código empleado para entrenamiento, evaluación e integración deberá mantenerse en el repositorio GitHub del grupo.
+El documento final deberá incluir el enlace al repositorio y el enlace al video de demostración.
+Nombre sugerido del archivo: El documento debe enviarse para su calificación en formato PDF con el siguiente nombre: Informe_Lab2_CodigoPUCP1_CodigoPUCP2_CodigoPUCPn, por ejemplo, Informe_Lab2_20153026_20171010.
+Fecha de entrega: Domingo 06/09/2026 hasta las 23:59 horas.
+INDICE
+1. Entrenamiento y comparación de modelos (2.5 puntos)2
+2. Selección y evaluación del modelo final (1.5 puntos)2
+3. Integración HMI y evidencia en video (2 puntos)3
+4. Análisis final y conclusiones (1 punto)3
+1. Entrenamiento y comparación de modelos (2.5 puntos)
+A partir del dataframe de características generado durante la sesión:
+Entrenar y comparar dos modelos de clasificación utilizando los datos de los 7 sujetos. Entregar:
+nombre de los dos modelos;
+métricas de evaluación de ambos;
+una tabla comparativa;
+identificación del sujeto reservado para prueba.
+2. Selección y evaluación del modelo final (1.5 puntos)
+Seleccionar el mejor de los dos modelos a partir de los resultados obtenidos y evaluarlo sobre el sujeto reservado para prueba. 
+Entregar:
+matriz de confusión;
+métricas finales del modelo seleccionado;
+breve explicación de las clases con mayor confusión;
+modelo exportado en .joblib o .pkl, junto con el preprocesamiento necesario.
+Modelo seleccionado: ________________________________________
+3. Integración HMI y evidencia en video (2 puntos)
+Utilizar el simulador 03_GripperVirtual.py para demostrar el funcionamiento de la HMI.
+Primero, ejecutar la interfaz en modo demo utilizando hmi_demo.csv para verificar las acciones del gripper:
+Clase 1 → Abrir
+Clase 2 → Cerrar
+Clase 3 → Rotar / confirmar
+Luego, cargar el modelo final entrenado y mostrar su integración con la interfaz.
+Grabar un video de máximo 2 minutos, el video puede ser grabado por un solo integrante del grupo, mostrando su pantalla durante la ejecución de la HMI, donde se observe:
+funcionamiento del gripper en modo demo;
+carga del modelo entrenado;
+predicción de clases;
+respuesta del gripper virtual.
+Enlace al video: ___________________________
+Enlace al repositorio GitHub: ___________________________
+4. Análisis final y conclusiones (1 punto)
+¿Qué modelo presentó el mejor desempeño y qué evidencia respalda su selección?
+¿Qué errores de clasificación afectaron más el comportamiento del gripper virtual?
+¿Qué medidas adicionales serían necesarias antes de utilizar este sistema para controlar un actuador físico real?
+Anexo A
+Adjuntar el archivo .ipynb utilizado para el desarrollo del laboratorio o, alternativamente, el enlace al notebook o repositorio de GitHub donde se encuentre el código correspondiente.
+El material debe incluir el procesamiento de las señales, extracción de características, entrenamiento y evaluación del modelo, así como la integración con la HMI del gripper virtual.
+Anexo B
+Se espera que los integrantes trabajen de forma equitativa y actúen con honestidad en su autoevaluación:
+https://forms.gle/J9oaVmhhMCMsZiAw5
